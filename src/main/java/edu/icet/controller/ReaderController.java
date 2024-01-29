@@ -8,20 +8,21 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @Slf4j
 @Controller
 @RestController("reader")
 public class ReaderController {
     @Autowired
     ReaderService service;
-    @GetMapping
-    public ReaderDto getReader(){
-        return new ReaderDto("R102030", "Saman", "111111", "0711111111", "Colombo");
+    @GetMapping("reader/list")
+    public List<ReaderEntity> getReader(){
+        return service.getAllReaders();
     }
-    @PostMapping
+    @PostMapping("reader/add")
     public ReaderEntity postReader(@RequestBody ReaderDto readerDto){
         log.info(String.valueOf(readerDto));
         return service.postReader(readerDto);
     }
-
 }
