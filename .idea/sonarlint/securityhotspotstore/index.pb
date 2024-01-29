@@ -26,3 +26,7 @@ Q.idea/sonarlint/securityhotspotstore/f/d/fdd2f93cff37dcc3cb75c36f512b8ff49966a5
 Q.idea/sonarlint/securityhotspotstore/d/0/d002a3b1d8a24022d8d1caea45cff0fbd6d07b61,c\a\caf3bc1ee199c010575829e4b9707879906509ff
 w
 G.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec,8\6\863e0292fd7e9b3e74dafd6cc01f73ba76346482
+g
+7src/main/java/edu/icet/controller/ReaderController.java,8\b\8b070f8ee9c840ba609ad8157088b8e42cb50f19
+Y
+)src/main/java/edu/icet/dto/ReaderDto.java,d\6\d68aa4c18533308b45c2f6e4a2bd815cfaf42134
