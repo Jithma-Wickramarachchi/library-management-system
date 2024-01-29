@@ -22,7 +22,6 @@ public class ReaderController {
     }
     @PostMapping("reader/add")
     public ReaderEntity postReader(@RequestBody ReaderDto readerDto){
-        log.info(String.valueOf(readerDto));
         return service.postReader(readerDto);
     }
 }
