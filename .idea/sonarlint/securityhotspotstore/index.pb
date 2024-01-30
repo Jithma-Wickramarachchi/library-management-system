@@ -3,14 +3,6 @@ P
  src/main/java/edu/icet/Main.java,d\0\d002a3b1d8a24022d8d1caea45cff0fbd6d07b61
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-e
-5src/main/java/edu/icet/controller/BookController.java,f\d\fdd2f93cff37dcc3cb75c36f512b8ff49966a512
-T
-$src/main/java/edu/icet/dto/Book.java,5\c\5cc96d253b3c8ffe9b7a9e627016aafae2620f0e
-_
-/src/main/java/edu/icet/service/BookService.java,6\6\66066eb8f490dd57ce7148aadee471c3c299aff0
-h
-8src/main/java/edu/icet/service/impl/BookServiceImpl.java,6\d\6dfe4c0f8d590de2dd8d438d00db7885fca8eeee
 S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 :
@@ -38,8 +30,6 @@ j
 :src/main/java/edu/icet/service/impl/ReaderServiceImpl.java,7\8\78d17d76951f8ba0bda000af75021529dcff5f08
 g
 7src/main/java/edu/icet/repository/ReaderRepository.java,2\a\2a52f537026100bcd2739a7ad663a0226c941d49
-p
-@src/main/java/edu/icet/repository/impl/ReaderRepositoryImpl.java,2\9\299d6ef1794f27627142ab21ccf0f87a008a800e
 Å
 Q.idea/sonarlint/securityhotspotstore/7/e/7eeed879db4f47a1c17eae4f92f431d918ccb83e,7\b\7b20f737aaf3868ec6cd859c2ce44d64491433e2
 Å

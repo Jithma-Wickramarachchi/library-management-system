@@ -1,8 +1,6 @@
 package edu.icet.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 import lombok.ToString;
 
@@ -11,8 +9,10 @@ import lombok.ToString;
 @ToString
 @Table(name = "reader")
 public class ReaderEntity {
+    @SequenceGenerator(name = "readerSequence", allocationSize = 1)
     @Id
-    private String readerId;
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "readerSequence")
+    private Long readerId;
     private String name;
     private String nic;
     private String contact;
