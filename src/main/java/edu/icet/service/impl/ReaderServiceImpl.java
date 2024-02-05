@@ -9,9 +9,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 @Service
 @Slf4j
@@ -40,5 +38,17 @@ public class ReaderServiceImpl implements ReaderService {
         }
 
         return readerList;
+    }
+
+    @Override
+    public boolean deleteReader(Long readerId) {
+
+        Optional<ReaderEntity> readerEntityOptionl = repository.findById(readerId);
+
+        if(readerEntityOptionl.isPresent()){
+            repository.deleteById(readerId);
+            return true;
+        }
+        return false;
     }
 }

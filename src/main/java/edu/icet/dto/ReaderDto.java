@@ -10,7 +10,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ReaderDto {
-    private String readerId;
+    private Long readerId;
     private String name;
     private String nic;
     private String contact;
