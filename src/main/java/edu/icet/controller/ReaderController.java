@@ -17,11 +17,11 @@ public class ReaderController {
     @Autowired
     ReaderService service;
     @GetMapping("reader/list")
-    public List<ReaderEntity> getReader(){
-        return service.getAllReaders();
+    public List<ReaderDto> getReader(){return service.getAllReaders();
     }
     @PostMapping("reader/add")
     public ReaderEntity postReader(@RequestBody ReaderDto readerDto){
+        log.info(String.valueOf(readerDto));
         return service.postReader(readerDto);
     }
 }

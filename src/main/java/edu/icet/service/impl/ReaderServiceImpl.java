@@ -9,6 +9,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 @Service
@@ -27,7 +29,16 @@ public class ReaderServiceImpl implements ReaderService {
     }
 
     @Override
-    public List<ReaderEntity> getAllReaders() {
-        return (List<ReaderEntity>) repository.findAll();
+    public List<ReaderDto> getAllReaders() {
+        List<ReaderDto> readerList  =new ArrayList<>();
+
+        Iterable<ReaderEntity> readerEntityList = repository.findAll();
+        Iterator<ReaderEntity> iterator = readerEntityList.iterator();
+
+        while (iterator.hasNext()){
+           readerList.add(mapper.convertValue(iterator.next(), ReaderDto.class));
+        }
+
+        return readerList;
     }
 }

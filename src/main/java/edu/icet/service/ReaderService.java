@@ -8,5 +8,5 @@ import java.util.List;
 
 public interface ReaderService {
     ReaderEntity postReader(ReaderDto readerDto);
-    List<ReaderEntity> getAllReaders();
+    List<ReaderDto> getAllReaders();
 }
