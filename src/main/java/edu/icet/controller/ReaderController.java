@@ -4,7 +4,6 @@ import edu.icet.dto.ReaderDto;
 import edu.icet.entity.ReaderEntity;
 import edu.icet.service.ReaderService;
 import lombok.extern.slf4j.Slf4j;
-import org.aspectj.lang.annotation.Around;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -21,11 +20,9 @@ public class ReaderController {
         this.service = service;
     }
     ReaderService service;
-    @AuditTime
     @GetMapping("reader")
     public List<ReaderDto> getReader(){return service.getAllReaders();
     }
-    @AuditTime
     @PostMapping("reader")
     public ReaderEntity postReader(@RequestBody ReaderDto readerDto){
         return service.postReader(readerDto);
