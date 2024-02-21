@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @Slf4j
@@ -38,5 +39,17 @@ public class BookServiceImpl implements BookService {
         }
         log.info(list.toString());
         return dtoList;
+    }
+
+    @Override
+    public boolean delete(String isbn) {
+
+        Optional<BookEntity> optionalBookEntity = repository.findById(isbn);
+
+        if(optionalBookEntity.isPresent()){
+            repository.deleteById(isbn);
+            return true;
+        }
+        return false;
     }
 }
