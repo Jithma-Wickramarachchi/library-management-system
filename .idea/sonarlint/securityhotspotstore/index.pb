@@ -70,10 +70,6 @@ w
 G.idea/sonarlint/issuestore/7/4/74a049def46a51535f618b9576a7cb11e86db679,5\6\56b92275d7cec2e7d39a66cbb4f716dc032cdbaa
 Å
 Q.idea/sonarlint/securityhotspotstore/c/a/caf3bc1ee199c010575829e4b9707879906509ff,5\8\5830d075bfa3c98b7743ad39d5f06c1e45d5a6b2
-`
-0src/main/java/edu/icet/controller/AuditTime.java,9\2\922c5fdc7536b4cacbf0bcb69c221886076b77a1
-e
-5src/main/java/edu/icet/controller/AuditLogAspect.java,e\1\e1206c3c684bdfe4f4b50fc34bf0976daac262b4
 W
 'src/main/java/edu/icet/dto/BookDto.java,3\b\3b55c379681043003e3a04d5d9e548099854d187
 e
