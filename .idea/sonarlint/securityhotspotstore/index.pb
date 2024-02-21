@@ -74,3 +74,15 @@ Q.idea/sonarlint/securityhotspotstore/c/a/caf3bc1ee199c010575829e4b9707879906509
 0src/main/java/edu/icet/controller/AuditTime.java,9\2\922c5fdc7536b4cacbf0bcb69c221886076b77a1
 e
 5src/main/java/edu/icet/controller/AuditLogAspect.java,e\1\e1206c3c684bdfe4f4b50fc34bf0976daac262b4
+W
+'src/main/java/edu/icet/dto/BookDto.java,3\b\3b55c379681043003e3a04d5d9e548099854d187
+e
+5src/main/java/edu/icet/controller/BookController.java,f\d\fdd2f93cff37dcc3cb75c36f512b8ff49966a512
+e
+5src/main/java/edu/icet/repository/BookRepository.java,a\6\a61fa4d75f4cd04529468ef8b83e4b3b897ce647
+_
+/src/main/java/edu/icet/service/BookService.java,6\6\66066eb8f490dd57ce7148aadee471c3c299aff0
+h
+8src/main/java/edu/icet/service/impl/BookServiceImpl.java,6\d\6dfe4c0f8d590de2dd8d438d00db7885fca8eeee
+]
+-src/main/java/edu/icet/entity/BookEntity.java,8\8\886d497d4a297116fd775c3fa14aed82dd8a146f
