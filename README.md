@@ -1,4 +1,4 @@
-# 📚 Library Management System | Book Microservice
+# 📚 Library Management System | Reader Microservice
  This is a personal project which I use to sharp my practice of the full stack development.
 
  Technologies : Spring Boot, Spring JPA
